@@ -13,7 +13,7 @@ The U-ARM is an EMG-driven rehabilitation exoskeleton designed for patients with
 
 ![uarm_signal_pipeline](https://github.com/user-attachments/assets/587f099f-4dbc-4315-a66d-292929cb6de3)
 
-
+---
 
 ### Signal Pipeline
 
