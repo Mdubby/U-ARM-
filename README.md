@@ -1,4 +1,3 @@
-[UARM_README.md](https://github.com/user-attachments/files/26523296/UARM_README.md)
 # U-ARM — Upper Arm Rehabilitation Machine
 ### BME 491: Bioengineering Design and Analysis | University of Nevada, Reno | Spring 2023
 
@@ -10,10 +9,11 @@ The U-ARM is an EMG-driven rehabilitation exoskeleton designed for patients with
 
 ### System Overview
 
-```
-![uarm_signal_pipeline](https://github.com/user-attachments/assets/9235d5d3-2c99-44f4-8d3e-423e8fa686e5)
+![uarm_patient_schematic](https://github.com/user-attachments/assets/b622e941-a7b6-4df0-8bbc-135e0f14479f)
 
-```
+![uarm_signal_pipeline](https://github.com/user-attachments/assets/587f099f-4dbc-4315-a66d-292929cb6de3)
+
+
 
 ### Signal Pipeline
 
@@ -90,30 +90,26 @@ Install `EMGFilters` via the Arduino Library Manager or from the [Seeed Studio E
 
 ---
 
-## Known Limitations
-
-- `Threshold = 0` in the current build — calibration must be performed manually at runtime before patient sessions.
-- Maximum envelope value is estimated at 1000 and may need adjustment per patient and electrode placement.
-- PWM inversion issue in early versions (formula `255 - (85 * envelope)`) has been corrected to use `map()` for proper proportional motor control.
-- Single-channel EMG — only the primary bicep contraction is detected; no antagonist muscle monitoring.
-
----
 
 ## Project Documentation
 
-Full business plan, system schematic, Gantt chart, and hardware photos are available in the `/docs` folder.
+Full business plan, system schematic, Gantt chart, and hardware photos are available in the `UARM_Buisness_Plan.dox` folder.
 
 ---
 
 ## Authors
 
 **Matthew Wallace** — Biomedical Engineering, University of Nevada, Reno (B.S. 2023)
-Pursuing M.S. Electrical Engineering, UNR, Fall 2026
 linkedin.com/in/mattwallace-bme
 
 **Monte Howell** — Biomedical Engineering, University of Nevada, Reno (B.S. 2023)
-Primary co-developer of the firmware. Monte and I wrote the entirety of the code
-together through collaborative development and debugging, outside of the official course team.
+
+**Jose Moreno Duran** — Biomedical & Electrical Engineering, University of Nevada, Reno (B.S. 2023)
+
+**Kirsche Stanton** — Biomedical Engineering & Accounting, University of Nevada, Reno (B.S. 2023)
+   
+
+
 
 ---
 
