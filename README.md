@@ -11,18 +11,8 @@ The U-ARM is an EMG-driven rehabilitation exoskeleton designed for patients with
 ### System Overview
 
 ```
-EMG Electrodes (bicep)
-        │
-        ▼  analogRead(A0) @ 1000 Hz
-   ATmega2560
-        │
-        ├─► myFilter.update()       ← Bandpass + 60 Hz notch filter
-        │
-        ├─► sq(filtered)            ← Envelope detection (signal squared)
-        │
-        ├─► threshold gate          ← Suppress baseline noise
-        │
-        └─► analogWrite(Pin 7)      ← PWM → Gimbal motor speed
+![uarm_signal_pipeline](https://github.com/user-attachments/assets/9235d5d3-2c99-44f4-8d3e-423e8fa686e5)
+
 ```
 
 ### Signal Pipeline
